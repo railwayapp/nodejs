@@ -33,7 +33,7 @@ jobs:
         buidpackTomlVersion=$(sudo skopeo inspect "oci-archive:${GITHUB_WORKSPACE}/buildpackage.cnb" | jq -r '.Labels."io.buildpacks.buildpackage.metadata" | fromjson | .version')
         githubReleaseVersion="${{ steps.event.outputs.tag }}"
         if [[ "$buidpackTomlVersion" != "$githubReleaseVersion" ]]; then
-          echo "Version in buildpack.toml $(buidpackTomlVersion) and github release $(githubReleaseVersion) are not identical"
+          echo "Version in buildpack.toml $buidpackTomlVersion and github release $githubReleaseVersion are not identical"
           exit 1
         fi
 
