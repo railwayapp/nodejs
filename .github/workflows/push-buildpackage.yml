@@ -22,6 +22,7 @@ jobs:
         echo "::set-output name=download_url::$(jq -r '.release.assets[] | select(.name | endswith(".cnb")) | .url' "${GITHUB_EVENT_PATH}")"
 
     - name: Download
+      id: download
       uses: paketo-buildpacks/github-config/actions/release/download-asset@main
       with:
         url: ${{ steps.event.outputs.download_url }}
@@ -33,7 +34,7 @@ jobs:
         buidpackTomlVersion=$(sudo skopeo inspect "oci-archive:${GITHUB_WORKSPACE}/buildpackage.cnb" | jq -r '.Labels."io.buildpacks.buildpackage.metadata" | fromjson | .version')
         githubReleaseVersion="${{ steps.event.outputs.tag }}"
         if [[ "$buidpackTomlVersion" != "$githubReleaseVersion" ]]; then
-          echo "Version in buildpack.toml $buidpackTomlVersion and github release $githubReleaseVersion are not identical"
+          echo "Version in buildpack.toml ($buidpackTomlVersion) and github release ($githubReleaseVersion) are not identical"
           exit 1
         fi
 

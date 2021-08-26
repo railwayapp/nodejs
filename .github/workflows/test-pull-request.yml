@@ -6,12 +6,28 @@ on:
     - main
 
 jobs:
-  integration:
-    name: Integration Tests
+  unit:
+    name: Unit Tests
     runs-on: ubuntu-latest
     steps:
     - name: Setup Go
-      uses: actions/setup-go@v2.1.3
+      uses: actions/setup-go@v2.1.4
+      with:
+        go-version: 1.17.x
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run Unit Tests
+      run: ./scripts/unit.sh
+
+  integration:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    needs: unit
+    steps:
+    - name: Setup Go
+      uses: actions/setup-go@v2.1.4
       with:
         go-version: 1.17.x
 
@@ -21,7 +37,9 @@ jobs:
     - run: git fetch --depth=1 origin +refs/tags/*:refs/tags/* || true
 
     - name: Run Integration Tests
-      run: ./scripts/integration.sh
+      run: ./scripts/integration.sh --use-token
+      env:
+        GIT_TOKEN: ${{ github.token }}
 
   upload:
     name: Upload Workflow Event Payload
