@@ -1,9 +1,9 @@
-api = "0.4"
+api = "0.5"
 
 [buildpack]
-  homepage = "https://github.com/paketo-buildpacks/nodejs"
-  id = "paketo-buildpacks/nodejs"
-  name = "Paketo Node.js Buildpack"
+  homepage = "https://github.com/railwayapp/railway-nodejs"
+  id = "railwayapp/railway-nodejs"
+  name = "Railway Node.js Buildpack"
 
 [metadata]
   include-files = ["buildpack.toml"]
