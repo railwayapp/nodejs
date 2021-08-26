@@ -1,8 +1,8 @@
 api = "0.5"
 
 [buildpack]
-  homepage = "https://github.com/railwayapp/railway-nodejs"
-  id = "railwayapp/railway-nodejs"
+  homepage = "https://github.com/railwayapp/nodejs"
+  id = "railwayapp/nodejs"
   name = "Railway Node.js Buildpack"
 
 [metadata]
@@ -33,7 +33,7 @@ api = "0.5"
     version = "0.1.0"
 
   [[order.group]]
-    id = "railwayapp/railway-node-run-script"
+    id = "railwayapp/node-run-script"
     optional = true
     version = "0.1.1"
 
@@ -77,7 +77,7 @@ api = "0.5"
     version = "0.1.0"
 
   [[order.group]]
-    id = "railwayapp/railway-node-run-script"
+    id = "railwayapp/node-run-script"
     optional = true
     version = "0.1.1"
 

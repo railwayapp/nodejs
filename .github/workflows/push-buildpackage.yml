@@ -38,7 +38,7 @@ jobs:
           exit 1
         fi
 
-    - name: Push to DockerHub
+    - name: Push to GitHub Registry
       id: push
       env:
         USERNAME: ${{ github.actor }}
