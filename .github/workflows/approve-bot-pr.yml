@@ -41,14 +41,14 @@ jobs:
         token: ${{ secrets.GH_PAT }}
         repo: ${{ github.repository }}
         number: ${{ needs.download.outputs.pr-number }}
-        bots: dependabot[bot],web-flow,railway-bot
+        bots: dependabot[bot],web-flow,railway-bot,paketo-bot
 
     - name: Checkout
-      if: steps.human-commits.outputs.human_commits == 'false' && steps.unverified-commits.outputs.unverified_commits == 'false'
+      if: steps.human-commits.outputs.human_commits == 'false'
       uses: actions/checkout@v2
 
     - name: Approve
-      if: steps.human-commits.outputs.human_commits == 'false' && steps.unverified-commits.outputs.unverified_commits == 'false'
+      if: steps.human-commits.outputs.human_commits == 'false'
       uses: paketo-buildpacks/github-config/actions/pull-request/approve@main
       with:
         token: ${{ secrets.GH_PAT }}
