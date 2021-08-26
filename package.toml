@@ -36,7 +36,7 @@
   uri = "docker://gcr.io/paketo-buildpacks/ca-certificates:2.3.2"
 
 [[dependencies]]
-  uri = "docker://ghcr.io/railwayapp/railway-node-run-script:0.1.1"
+  uri = "docker://ghcr.io/railwayapp/node-run-script:0.1.1"
 
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/node-module-bom:0.1.0"
