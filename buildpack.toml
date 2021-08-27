@@ -20,6 +20,10 @@ api = "0.5"
     version = "0.6.2"
 
   [[order.group]]
+    id = "railwayapp/node-config"
+    version = "0.0.1"
+
+  [[order.group]]
     id = "paketo-buildpacks/yarn"
     version = "0.4.0"
 
@@ -68,6 +72,10 @@ api = "0.5"
     version = "0.6.2"
 
   [[order.group]]
+    id = "railwayapp/node-config"
+    version = "0.0.1"
+
+  [[order.group]]
     id = "paketo-buildpacks/npm-install"
     version = "0.4.0"
 
@@ -110,6 +118,10 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
     version = "0.6.2"
+
+  [[order.group]]
+    id = "railwayapp/node-config"
+    version = "0.0.1"
 
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
