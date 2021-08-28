@@ -35,7 +35,7 @@ api = "0.5"
   [[order.group]]
     id = "railwayapp/node-run-script"
     optional = true
-    version = "0.1.2"
+    version = "0.1.3"
 
   [[order.group]]
     id = "paketo-buildpacks/yarn-start"
@@ -79,7 +79,7 @@ api = "0.5"
   [[order.group]]
     id = "railwayapp/node-run-script"
     optional = true
-    version = "0.1.2"
+    version = "0.1.3"
 
   [[order.group]]
     id = "paketo-buildpacks/npm-start"
