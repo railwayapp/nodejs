@@ -34,7 +34,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.0"
+    version = "0.1.1"
 
   [[order.group]]
     id = "railwayapp/node-run-script"
@@ -82,7 +82,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.0"
+    version = "0.1.1"
 
   [[order.group]]
     id = "railwayapp/node-run-script"
@@ -126,7 +126,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.0"
+    version = "0.1.1"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
