@@ -53,7 +53,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "3.2.0"
+    version = "3.2.1"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
@@ -101,7 +101,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "3.2.0"
+    version = "3.2.1"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
@@ -140,7 +140,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
-    version = "3.2.0"
+    version = "3.2.1"
 
   [[order.group]]
     id = "paketo-buildpacks/image-labels"
