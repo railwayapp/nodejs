@@ -17,7 +17,7 @@ api = "0.5"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "0.10.0"
+    version = "0.11.0"
 
   [[order.group]]
     id = "railwayapp/node-config"
@@ -34,7 +34,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.2"
+    version = "0.2.0"
 
   [[order.group]]
     id = "railwayapp/node-run-script"
@@ -69,7 +69,7 @@ api = "0.5"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "0.10.0"
+    version = "0.11.0"
 
   [[order.group]]
     id = "railwayapp/node-config"
@@ -82,7 +82,7 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.2"
+    version = "0.2.0"
 
   [[order.group]]
     id = "railwayapp/node-run-script"
@@ -117,7 +117,7 @@ api = "0.5"
 
   [[order.group]]
     id = "paketo-buildpacks/node-engine"
-    version = "0.10.0"
+    version = "0.11.0"
 
   [[order.group]]
     id = "railwayapp/node-config"
@@ -126,11 +126,11 @@ api = "0.5"
   [[order.group]]
     id = "paketo-buildpacks/node-module-bom"
     optional = true
-    version = "0.1.2"
+    version = "0.2.0"
 
   [[order.group]]
     id = "paketo-buildpacks/node-start"
-    version = "0.5.0"
+    version = "0.6.0"
 
   [[order.group]]
     id = "paketo-buildpacks/procfile"
